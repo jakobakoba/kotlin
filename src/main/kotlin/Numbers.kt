@@ -1,6 +1,7 @@
 interface Numbers {
     fun sum(): Int
     fun subtract(): Int
+    fun divide(): Double
 
     class Base(
         private val number1: Int,
@@ -13,5 +14,11 @@ interface Numbers {
         override fun subtract(): Int {
             return number1 - number2
         }
+
+        override fun divide(): Double {
+            return number1.toDouble()/ number2
+        }
     }
+
+
 }
